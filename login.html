@@ -1,0 +1,42 @@
+<html ng-app="myapp">
+
+
+  <head>      
+        <link rel="stylesheet" href="css/mystyles.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type = "text/javascript" src = "js/logger.js"></script>
+       
+       
+
+    
+  </head>
+    <body  ng-controller = "empcontroller">
+<ons-navigator>
+   <ons-page>
+       
+<div class="container">
+  <section id="content">
+    <form action="">
+      <h1>Login Form</h1>
+      <div>
+        <input type="text" placeholder="Username" required="" id="username" ng-model="user" />
+      </div>
+      <div>
+        <input type="password" placeholder="Password" required="" id="password" ng-model="pswd"/>
+      </div>
+      <div class="alert alert-danger" role="alert" ng-show="errorMsg">{{errorMsg}}</div>
+      <div>    
+
+        <input type = "button" value = "LOGIN" ng-click = "insertdata()" id = "butt"/>        
+      </div>
+    </form>
+    <div class="button">
+      <a href="#">LOGGER</a>
+    </div>
+  </section>
+</div>
+</ons-page>
+</ons-navigator>
+</body>
+</html>
